@@ -18,7 +18,7 @@ const routes = createBrowserRouter([
         index: true,
         element: (
           <Suspense fallback={null}>
-            <HomePage />,
+            <HomePage />
           </Suspense>
         ),
       },
