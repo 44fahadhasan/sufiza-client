@@ -151,3 +151,27 @@ export const solutions = [
     button_label: "Read More",
   },
 ];
+
+export const customerFeedbacks = [
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+  {
+    src: "",
+  },
+];

@@ -12,16 +12,31 @@ import {
 import { Swiper } from "swiper/react";
 
 const Carousel = ({ data, children }) => {
-  const { isResponsive, IsFreeMode, slidesPerViewNum, gap, fade, play } =
-    data || {};
+  const {
+    loopContinue,
+    isResponsive,
+    IsFreeMode,
+    slidesPerViewNum,
+    gap,
+    fade,
+    play,
+  } = data || {};
 
   // responsive data for slider
   const responsive = {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    1280: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
@@ -41,6 +56,7 @@ const Carousel = ({ data, children }) => {
         freeMode={IsFreeMode}
         effect={fade && "fade"}
         autoplay={play}
+        loop={loopContinue}
         breakpoints={isResponsive && responsive}
         modules={[
           EffectFade,

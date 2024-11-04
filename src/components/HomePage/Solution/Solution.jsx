@@ -5,7 +5,7 @@ import SolutionCard from "./SolutionCard";
 
 const Solution = () => {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-gray-50">
       <Containter>
         {/* title */}
         <Heading
