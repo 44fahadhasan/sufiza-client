@@ -92,3 +92,22 @@ export const footerBottomNavbar = [
     link: "",
   },
 ];
+
+export const heroSliderImages = [
+  {
+    img_url:
+      "https://luxestate-dcb2b.web.app/assets/luxestate-bg-4-situQXM1.jpg",
+  },
+  {
+    img_url:
+      "https://luxestate-dcb2b.web.app/assets/luxestate-bg-5-xy0u2i9_.jpg",
+  },
+  {
+    img_url:
+      "https://luxestate-dcb2b.web.app/assets/luxestate-bg-5-xy0u2i9_.jpg",
+  },
+  {
+    img_url:
+      "https://luxestate-dcb2b.web.app/assets/luxestate-bg-4-situQXM1.jpg",
+  },
+];
