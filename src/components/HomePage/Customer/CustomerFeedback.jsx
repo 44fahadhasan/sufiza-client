@@ -42,7 +42,7 @@ const CustomerFeedback = () => {
           {/* left button */}
           <button
             type="button"
-            className="z-50 absolute translate-y-[-50%] top-[50%] left-0 swiper-button-prev"
+            className="z-10 absolute translate-y-[-50%] top-[50%] left-0 swiper-button-prev"
           >
             <IoIosArrowDropleftCircle className="text-[#7e6e2a] text-4xl" />
           </button>
@@ -50,7 +50,7 @@ const CustomerFeedback = () => {
           {/* right button */}
           <button
             type="button"
-            className="z-50 absolute translate-y-[-50%] top-[50%] right-0 swiper-button-next"
+            className="z-10 absolute translate-y-[-50%] top-[50%] right-0 swiper-button-next"
           >
             <IoIosArrowDroprightCircle className="text-[#7e6e2a] text-4xl" />
           </button>
