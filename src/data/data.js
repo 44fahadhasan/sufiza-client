@@ -1,6 +1,11 @@
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin, FaSquareYoutube } from "react-icons/fa6";
 
+import buy from "../assets/svg/buy.svg";
+import rent from "../assets/svg/rent.svg";
+import sell from "../assets/svg/sell.svg";
+import to_let from "../assets/svg/to_let.svg";
+
 export const mainNavbar = [
   {
     label: "Home",
@@ -109,5 +114,40 @@ export const heroSliderImages = [
   {
     img_url:
       "https://luxestate-dcb2b.web.app/assets/luxestate-bg-4-situQXM1.jpg",
+  },
+];
+
+export const solutions = [
+  {
+    icon: buy,
+    alt: "Icon 1 description",
+    title: "Buy",
+    content:
+      "This is the content for the first item. It describes the features or details of this particular section.",
+    button_label: "Learn More",
+  },
+  {
+    icon: rent,
+    alt: "Icon 2 description",
+    title: "Rent",
+    content:
+      "This is the content for the second item. It provides information about this section or feature.",
+    button_label: "Get Started",
+  },
+  {
+    icon: sell,
+    alt: "Icon 3 description",
+    title: "Sell",
+    content:
+      "This is the content for the third item. It highlights what this feature or section offers.",
+    button_label: "Explore",
+  },
+  {
+    icon: to_let,
+    alt: "Icon 4 description",
+    title: "Manage",
+    content:
+      "This is the content for the fourth item. It explains the benefits or details of this feature.",
+    button_label: "Read More",
   },
 ];
