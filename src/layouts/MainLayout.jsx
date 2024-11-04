@@ -4,12 +4,12 @@ import Header from "../pages/mainPages/shared/Header";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="roboto">
       {/* header */}
       <Header />
 
       {/* main layout */}
-      <main className="min-h-[calc(100vh-100px)]">
+      <main className="min-h-[calc(100vh-441px)] mt-[56px]">
         <Outlet />
       </main>
 
