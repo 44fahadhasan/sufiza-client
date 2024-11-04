@@ -1,8 +1,19 @@
-import { Outlet } from "react-router-dom";
+import "preline/preline";
+import { useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../pages/mainPages/shared/Footer";
 import Header from "../pages/mainPages/shared/Header";
 
 const MainLayout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // preline reinitialization helper
+    if (window.HSStaticMethods) {
+      window.HSStaticMethods.autoInit();
+    }
+  }, [location.pathname]);
+
   return (
     <div className="roboto">
       {/* header */}
