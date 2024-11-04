@@ -4,7 +4,7 @@ import Paragraph from "../reusable/Paragraph";
 
 const FooterBottom = () => {
   return (
-    <div className="flex flex-col-reverse justify-between pt-5 border-t sm:flex-row flex-wrap items-center">
+    <div className="flex flex-col-reverse justify-between pt-5 border-t border-gray-300 sm:flex-row flex-wrap items-center">
       <Paragraph
         para={`Sufiza Property Limited 2011-${new Date().getFullYear()}`}
         style={"text-sm text-gray-800"}

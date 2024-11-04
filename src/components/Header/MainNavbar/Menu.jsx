@@ -5,7 +5,7 @@ import WithoutDropdown from "./WithoutDropdown";
 
 const Menu = () => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
+    <div className="flex flex-col lg:flex-row lg:justify-end lg:items-center gap-0.5 lg:gap-1">
       {mainNavbar?.map((item, idx) => (
         <React.Fragment key={idx}>
           {item?.dropdown ? (

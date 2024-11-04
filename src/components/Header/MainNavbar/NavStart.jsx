@@ -4,11 +4,11 @@ import SiteLogo from "../../shared/SiteLogo";
 
 const NavStart = () => {
   return (
-    <div className="flex items-center gap-x-5 md:col-span-3">
+    <div className="flex items-center gap-x-5 lg:col-span-3">
       {/* toggle menu button for small device */}
       <button
         type="button"
-        className="hs-collapse-toggle md:hidden relative text-3xl text-[#7e6e2a]"
+        className="hs-collapse-toggle lg:hidden relative text-3xl text-[#7e6e2a]"
         id="hs-header-base-collapse"
         aria-expanded="false"
         aria-controls="hs-header-base"
