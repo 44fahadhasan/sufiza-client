@@ -1,27 +1,36 @@
 import React from "react";
-import { mainNavbar } from "../../../data/data";
 import Dropdown from "./Dropdown";
 import WithoutDropdown from "./WithoutDropdown";
 
-const Menu = () => {
+const Menu = ({
+  data,
+  toggleDropdown,
+  openDropdown,
+  toggleSubDropdown,
+  openSubDropdown,
+}) => {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-end lg:items-center gap-0.5 lg:gap-1">
-      {mainNavbar?.map((item, idx) => (
-        <React.Fragment key={idx}>
-          {item?.dropdown ? (
-            <>
-              {/* first dropdown */}
-              <Dropdown data={item} />
-            </>
+    <>
+      {data.map((item, idx) => (
+        <li key={idx} className="relative">
+          {item.subItems ? (
+            <Dropdown
+              toggleDropdown={toggleDropdown}
+              openDropdown={openDropdown}
+              toggleSubDropdown={toggleSubDropdown}
+              openSubDropdown={openSubDropdown}
+              item={item}
+              idx={idx}
+            />
           ) : (
             <>
               {/* first without dropdown */}
               <WithoutDropdown data={item} />
             </>
           )}
-        </React.Fragment>
+        </li>
       ))}
-    </div>
+    </>
   );
 };
 

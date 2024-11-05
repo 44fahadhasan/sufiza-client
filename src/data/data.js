@@ -9,44 +9,67 @@ import to_let from "../assets/svg/to_let.svg";
 export const mainNavbar = [
   {
     label: "Home",
-    link: "/",
+    path: "Home",
   },
   {
-    label: "Services",
-    dropdown: [
-      { label: "Web Development", link: "/services/web-development" },
-      { label: "App Development", link: "/services/app-development" },
+    label: "About Us",
+    path: "About Us",
+  },
+  {
+    label: "Properties",
+    subItems: [
       {
-        label: "Digital Marketing",
-        dropdown: [
-          { label: "SEO", link: "/services/digital-marketing/seo" },
+        label: "Buy",
+        options: [
           {
-            label: "Content Marketing",
-            link: "/services/digital-marketing/content-marketing",
+            label: "Residential",
+            path: "Residential",
           },
           {
-            label: "Social Media Management",
-            link: "/services/digital-marketing/social-media",
+            label: "Commercial",
+            path: "Commercial",
+          },
+        ],
+      },
+      {
+        label: "Rent",
+        options: [
+          {
+            label: "Residential",
+            path: "Residential",
+          },
+          {
+            label: "Commercial",
+            path: "Commercial",
+          },
+        ],
+      },
+      {
+        label: "Sell",
+        options: [
+          {
+            label: "Residential",
+            path: "Residential",
+          },
+          {
+            label: "Commercial",
+            path: "Commercial",
           },
         ],
       },
     ],
   },
   {
-    label: "About Us",
-    link: "/about",
+    label: "Services",
+    path: "Services",
   },
   {
-    label: "Projects",
-    dropdown: [
-      { label: "E-commerce", link: "/projects/e-commerce" },
-      { label: "Healthcare", link: "/projects/healthcare" },
-      { label: "Finance", link: "/projects/finance" },
-    ],
+    label: "Blog",
+    path: "Blog",
   },
   {
     label: "Contact",
-    link: "/contact",
+    path: "Contact",
   },
 ];
 

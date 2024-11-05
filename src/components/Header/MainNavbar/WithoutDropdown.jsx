@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
 const WithoutDropdown = ({ data }) => {
-  const { label, link } = data || {};
+  const { label, path } = data || {};
 
   return (
     <NavLink
@@ -11,7 +11,7 @@ const WithoutDropdown = ({ data }) => {
           ? "p-2 flex items-center bg-gray-100 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
           : "p-2 flex items-center hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
       }
-      to={link}
+      to={path}
       aria-current={label}
     >
       {label}
