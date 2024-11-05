@@ -3,9 +3,9 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
-import { SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { customerFeedbacks } from "../../../data/data";
-import Carousel from "../../Carousel/Carousel";
 import Containter from "../../reusable/Containter";
 import Heading from "../../reusable/Heading";
 import FeedbackCard from "./FeedbackCard";
@@ -23,21 +23,42 @@ const CustomerFeedback = () => {
         {/* feedback slider */}
         <div className="relative mt-10 sm:mt-12 md:mt-14 lg:mt-16 xl:mt-20">
           {/* slider */}
-          <Carousel
-            data={{
-              isResponsive: true,
-              IsFreeMode: true,
-              slidesPerViewNum: 3,
-              gap: 20,
-              loopContinue: true,
+          <Swiper
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             }}
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            loop={true}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+            }}
+            modules={[Navigation, FreeMode]}
           >
+            {/* single slide render here */}
             {customerFeedbacks?.map(({ src }, idx) => (
               <SwiperSlide key={idx}>
                 <FeedbackCard src={src} key={idx} />
               </SwiperSlide>
             ))}
-          </Carousel>
+          </Swiper>
 
           {/* left button */}
           <button

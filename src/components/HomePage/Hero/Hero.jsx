@@ -1,7 +1,15 @@
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import {
+  Autoplay,
+  EffectFade,
+  FreeMode,
+  Keyboard,
+  Navigation,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { heroSliderImages } from "../../../data/data";
-import Carousel from "../../Carousel/Carousel";
 import Button from "../../reusable/Button";
 import Heading from "../../reusable/Heading";
 import ImgSlide from "./ImgSlide";
@@ -10,27 +18,33 @@ const Hero = () => {
   return (
     <section>
       {/* slider */}
-      <Carousel
-        data={{
-          isResponsive: false,
-          IsFreeMode: false,
-          slidesPerViewNum: 1,
-          fade: true,
-          gap: 0,
-          play: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false,
-          },
+      <Swiper
+        keyboard={true}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
+        slidesPerView={1}
+        spaceBetween={0}
+        freeMode={true}
+        effect={"fade"}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        }}
+        loop={true}
+        modules={[EffectFade, Navigation, Autoplay, FreeMode, Keyboard]}
       >
+        {/* single slide render here */}
         {heroSliderImages?.map((img, idx) => (
           <SwiperSlide key={idx}>
             <ImgSlide data={img} />
           </SwiperSlide>
         ))}
-      </Carousel>
+      </Swiper>
 
+      {/* contents */}
       <div className="z-10 absolute inset-0 flex justify-center items-center">
         <div
           className="uppercase font-medium space-y-5 ml-5 sm:ml-0
