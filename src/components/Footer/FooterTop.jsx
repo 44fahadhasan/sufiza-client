@@ -20,7 +20,7 @@ const FooterTop = () => {
           <div>
             <div className="flex gap-3">
               {/* icon */}
-              <FaLocationDot className="text-[#7e6e2a] text-xl mt-1" />
+              <FaLocationDot className="text-[#7e6e2a] text-xl mt-1 hidden sm:block" />
 
               {/* info */}
               <div className="space-y-4">

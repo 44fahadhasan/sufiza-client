@@ -212,3 +212,57 @@ export const countries = [
   { value: "ca", label: "Canada" },
   { value: "au", label: "Australia" },
 ];
+
+export const location = [
+  {
+    country: "Bangladesh",
+    division: [
+      {
+        division_name: "Dhaka",
+        district: ["Gazipur", "Narayanganj", "Manikganj"],
+      },
+      {
+        division_name: "Chattogram",
+        district: ["Cox's Bazar", "Feni", "Noakhali"],
+      },
+      {
+        division_name: "Khulna",
+        district: ["Jashore", "Satkhira", "Bagerhat"],
+      },
+    ],
+  },
+  {
+    country: "India",
+    division: [
+      {
+        division_name: "Maharashtra",
+        district: ["Mumbai", "Pune", "Nagpur"],
+      },
+      {
+        division_name: "Karnataka",
+        district: ["Bengaluru", "Mysuru", "Mangaluru"],
+      },
+      {
+        division_name: "West Bengal",
+        district: ["Kolkata", "Howrah", "Darjeeling"],
+      },
+    ],
+  },
+  {
+    country: "Pakistan",
+    division: [
+      {
+        division_name: "Punjab",
+        district: ["Lahore", "Faisalabad", "Rawalpindi"],
+      },
+      {
+        division_name: "Sindh",
+        district: ["Karachi", "Hyderabad", "Sukkur"],
+      },
+      {
+        division_name: "Khyber Pakhtunkhwa",
+        district: ["Peshawar", "Abbottabad", "Mardan"],
+      },
+    ],
+  },
+];

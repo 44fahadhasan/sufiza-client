@@ -87,6 +87,36 @@ const EstateFilters = () => {
           />
         </div>
       </div>
+
+      {/* division */}
+      <div className="mt-5 space-y-3 text-center">
+        {/* <div className="">
+          <Paragraph
+            para={"Division"}
+            style={"!text-[#7e6e2a] font-medium uppercase"}
+          />
+
+          <div className="flex gap-3 justify-center items-center">
+            {location?.map(({ country }, idx) => (
+              <CheckBox label={country} key={idx} />
+            ))}
+          </div>
+        </div> */}
+
+        {/* district */}
+        {/* <div className="">
+          <Paragraph
+            para={"District"}
+            style={"!text-[#7e6e2a] font-medium uppercase"}
+          />
+
+          <div className="flex gap-3 justify-center items-center">
+            {location?.map(({ country }, idx) => (
+              <CheckBox label={country} key={idx} />
+            ))}
+          </div>
+        </div> */}
+      </div>
     </div>
   );
 };

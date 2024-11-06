@@ -11,7 +11,7 @@ const Menu = ({
 }) => {
   return (
     <>
-      {data.map((item, idx) => (
+      {data?.map((item, idx) => (
         <li key={idx} className="relative">
           {item.subItems ? (
             <Dropdown

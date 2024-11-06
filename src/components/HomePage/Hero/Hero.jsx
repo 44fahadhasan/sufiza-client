@@ -50,7 +50,7 @@ const Hero = () => {
           className="uppercase font-medium space-y-5 ml-5 sm:ml-0
         "
         >
-          <p className="tracking-[5px] text-gray-950 font-medium">
+          <p className="tracking-[5px] text-[#feb504] font-medium">
             welcome to Sufiza
           </p>
 
