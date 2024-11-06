@@ -198,3 +198,17 @@ export const customerFeedbacks = [
     src: "",
   },
 ];
+
+export const properties = [
+  { value: "all", label: "All" },
+  { value: "residential", label: "Residential" },
+  { value: "commercial", label: "Commercial" },
+];
+
+export const countries = [
+  { value: "all", label: "All" },
+  { value: "bd", label: "Bangladesh" },
+  { value: "us", label: "United States" },
+  { value: "ca", label: "Canada" },
+  { value: "au", label: "Australia" },
+];

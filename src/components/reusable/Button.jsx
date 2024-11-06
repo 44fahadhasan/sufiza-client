@@ -15,7 +15,7 @@ const Button = ({ label, style }) => {
 
 Button.propTypes = {
   label: PropTypes.any,
-  style: PropTypes.string,
+  style: PropTypes.any,
 };
 
 export default Button;

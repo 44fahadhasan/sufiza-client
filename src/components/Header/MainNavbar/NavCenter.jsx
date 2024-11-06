@@ -9,7 +9,7 @@ const NavCenter = ({
   openSubDropdown,
 }) => (
   <ul
-    className={`overflow-y-scroll lg:overflow-visible max-h-[60vh] lg:h-auto flex-grow w-full px-4 border lg:border-none flex-col lg:justify-center lg:flex-row lg:flex lg:space-x-3 space-y-2 lg:space-y-0 absolute lg:static bg-white left-0 top-full lg:top-auto lg:left-auto transition-transform duration-300 ${
+    className={`overflow-y-scroll lg:overflow-visible max-h-[60vh] lg:h-auto flex-grow w-full px-4 border lg:border-none flex-col lg:justify-center lg:flex-row lg:flex lg:space-x-3 space-y-2 lg:space-y-0 absolute lg:static bg-gray-50 left-0 top-full lg:top-auto lg:left-auto transition-transform duration-300 ${
       menuOpen ? "flex" : "hidden"
     } lg:flex`}
   >
