@@ -1,4 +1,3 @@
-import React from "react";
 import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
@@ -9,6 +8,7 @@ import { customerFeedbacks } from "../../../data/data";
 import Containter from "../../reusable/Containter";
 import Heading from "../../reusable/Heading";
 import FeedbackCard from "./FeedbackCard";
+import "/public/css/swiper.css";
 
 const CustomerFeedback = () => {
   return (
@@ -23,6 +23,8 @@ const CustomerFeedback = () => {
       <div className="relative mt-10 sm:mt-12 md:mt-14 lg:mt-16 xl:mt-20">
         {/* slider */}
         <Swiper
+          centeredSlides={true}
+          slideActiveClass="swiper-slide-active"
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
