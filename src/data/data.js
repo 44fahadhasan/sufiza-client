@@ -64,12 +64,8 @@ export const mainNavbar = [
     path: "services",
   },
   {
-    label: "Blog",
-    path: "Blog",
-  },
-  {
     label: "Contact",
-    path: "Contact",
+    path: "contact",
   },
 ];
 

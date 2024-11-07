@@ -9,6 +9,7 @@ import ErrorPage from "../pages/commonPages/ErrorPage";
 const HomePage = lazy(() => import("../pages/mainPages/HomePage"));
 const AboutPage = lazy(() => import("../pages/mainPages/AboutPage"));
 const ServicesPage = lazy(() => import("../pages/mainPages/ServicesPage"));
+const ContactPage = lazy(() => import("../pages/mainPages/ContactPage"));
 
 const routes = createBrowserRouter([
   // main layout routes
@@ -47,6 +48,14 @@ const routes = createBrowserRouter([
         element: (
           <Suspense fallback={<TopLoadingBar />}>
             <ServicesPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "contact",
+        element: (
+          <Suspense fallback={<TopLoadingBar />}>
+            <ContactPage />
           </Suspense>
         ),
       },
