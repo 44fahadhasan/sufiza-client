@@ -10,7 +10,7 @@ const AboutPageMain = () => {
       <SectionImg
         data={{
           src: aboutImg,
-          alt: "About image",
+          alt: "About us banner image",
         }}
       />
 
