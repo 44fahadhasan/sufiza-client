@@ -12,8 +12,8 @@ export const mainNavbar = [
     path: "/",
   },
   {
-    label: "About Us",
-    path: "about-us",
+    label: "About",
+    path: "about",
   },
   {
     label: "Properties",
@@ -61,7 +61,7 @@ export const mainNavbar = [
   },
   {
     label: "Services",
-    path: "Services",
+    path: "services",
   },
   {
     label: "Blog",

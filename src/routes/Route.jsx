@@ -25,7 +25,7 @@ const routes = createBrowserRouter([
         ),
       },
       {
-        path: "about-us",
+        path: "about",
         element: (
           <Suspense fallback={null}>
             <AboutPage />
