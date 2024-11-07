@@ -20,7 +20,7 @@ const CustomerFeedback = () => {
       />
 
       {/* feedback slider */}
-      <div className="relative mt-10 sm:mt-12 md:mt-14 lg:mt-16 xl:mt-20">
+      <div className="relative mt-10 sm:mt-12 md:mt-14 lg:mt-16 xl:mt-20 swiper-slide-custom">
         {/* slider */}
         <Swiper
           centeredSlides={true}

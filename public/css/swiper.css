@@ -1,11 +1,11 @@
 /* default slide styles */
-.swiper-slide {
+.swiper-slide-custom .swiper-slide {
   transition: opacity 0.3s, transform 0.3s ease-in-out !important;
   transform: scale(1) !important;
 }
 
 /* active slide styles */
-.swiper-slide-active {
+.swiper-slide-custom .swiper-slide-active {
   transform: scale(1.09) !important;
   transition: opacity 0.3s, transform 0.3s ease-in-out !important;
 }
