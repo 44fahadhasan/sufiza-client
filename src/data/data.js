@@ -9,11 +9,11 @@ import to_let from "../assets/svg/to_let.svg";
 export const mainNavbar = [
   {
     label: "Home",
-    path: "Home",
+    path: "/",
   },
   {
     label: "About Us",
-    path: "About Us",
+    path: "about-us",
   },
   {
     label: "Properties",
@@ -264,5 +264,46 @@ export const location = [
         district: ["Peshawar", "Abbottabad", "Mardan"],
       },
     ],
+  },
+];
+
+export const aboutContents = [
+  {
+    para: "Our team of experienced professionals is dedicated to delivering exceptional service, ensuring that every step of your property journey is smooth and seamless. We understand that navigating the property market can be overwhelming, which is why we are here to guide you with expert advice, market insights, and personalized support.",
+  },
+  {
+    para: "At Sufiza Property Solutions, our mission is to help you make informed decisions that align with your goals, whether you’re an investor, a first-time homebuyer, or someone looking to rent or lease. We are committed to transparency, integrity, and building lasting relationships with our clients, based on trust and professionalism.",
+  },
+  {
+    para: "At Sufiza Property Solutions, our mission is to help you make informed decisions that align with your goals, whether you’re an investor, a first-time homebuyer, or someone looking to rent or lease. We are committed to transparency, integrity, and building lasting relationships with our clients, based on trust and professionalism.",
+  },
+  {
+    para: "At Sufiza Property Solutions, our mission is to help you make informed decisions that align with your goals, whether you’re an investor, a first-time homebuyer, or someone looking to rent or lease. We are committed to transparency, integrity, and building lasting relationships with our clients, based on trust and professionalism.",
+  },
+  {
+    para: "With an extensive portfolio of properties, market expertise, and an unwavering commitment to client satisfaction, Sufiza Property Solutions is the name you can rely on for all your real estate needs. Let us help you find the perfect property that fits your lifestyle and investment objectives.",
+  },
+];
+
+export const whyChoose = [
+  {
+    label: "Expert Guidance",
+    description:
+      "In-depth market knowledge and professional insights to help you make informed property decisions.",
+  },
+  {
+    label: "Wide Range of Properties",
+    description:
+      "Access to a broad portfolio of residential, commercial, and rental properties to suit various needs.",
+  },
+  {
+    label: "Hassle-Free Process",
+    description:
+      "End-to-end assistance from property search to documentation, ensuring a smooth and seamless experience.",
+  },
+  {
+    label: "Customer-Centric Approach",
+    description:
+      "Tailored solutions that prioritize your needs and goals, putting your satisfaction at the forefront.",
   },
 ];

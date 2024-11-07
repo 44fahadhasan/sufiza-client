@@ -20,7 +20,7 @@ const MainLayout = () => {
       <Header />
 
       {/* main layout */}
-      <main className="min-h-[calc(100vh-441px)] mt-[56px] bg-gray-50">
+      <main className="min-h-[calc(100vh-495.36px)] mt-[71.42px] bg-gray-50">
         <Outlet />
       </main>
 
