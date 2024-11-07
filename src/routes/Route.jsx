@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
+import NavigateScrollToTop from "../loader/NavigateScrollToTop";
+import TopLoadingBar from "../loader/TopLoadingBar";
 import ErrorPage from "../pages/commonPages/ErrorPage";
 
 // lazy load route pages
@@ -12,14 +14,22 @@ const routes = createBrowserRouter([
   // main layout routes
   {
     path: "/",
-    element: <MainLayout />,
+    element: (
+      <>
+        <MainLayout />
+
+        {/* scroll to top on every route navigate */}
+        <NavigateScrollToTop />
+      </>
+    ),
+
     errorElement: <ErrorPage />,
     children: [
       // public routes
       {
         index: true,
         element: (
-          <Suspense fallback={null}>
+          <Suspense fallback={<TopLoadingBar />}>
             <HomePage />
           </Suspense>
         ),
@@ -27,7 +37,7 @@ const routes = createBrowserRouter([
       {
         path: "about",
         element: (
-          <Suspense fallback={null}>
+          <Suspense fallback={<TopLoadingBar />}>
             <AboutPage />
           </Suspense>
         ),
@@ -35,7 +45,7 @@ const routes = createBrowserRouter([
       {
         path: "services",
         element: (
-          <Suspense fallback={null}>
+          <Suspense fallback={<TopLoadingBar />}>
             <ServicesPage />
           </Suspense>
         ),
